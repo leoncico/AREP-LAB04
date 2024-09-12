@@ -31,6 +31,8 @@ Se debe esperar 1 o 2 minutos hasta que las máquinas inicie. Luego ya debe esta
 Para probar la funcionalidad ingresa un mensaje y oprime el botón de enviar. Debería mostrarse el mensaje que ingresaste en la tabla inferior
 ![](/img/01.png)
 
+Video del Proyecto desplegado en AWS EC2: [https://youtu.be/FR_96BTxfcE]()
+
 ## Arquitectura
 -   Web-Bootstrap (Cliente Web):
     -   Contiene un campo de entrada y un botón que permiten al usuario ingresar una cadena de texto.
@@ -56,5 +58,3 @@ Para probar la funcionalidad ingresa un mensaje y oprime el botón de enviar. De
     -   Asegura que solo el tráfico permitido (como las peticiones web y las conexiones a MongoDB) pueda llegar a los servicios alojados en Docker.
 
 ![](/img/02.png)
-
-## Evaluación
