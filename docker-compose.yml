@@ -1,0 +1,59 @@
+services:
+  main:
+    build:
+      context: .
+      dockerfile: DockerfileApp
+    container_name: app
+    environment:
+      - SERVER_PORT=8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodatabase
+      - logservice1
+      - logservice2
+      - logservice3
+
+  logservice1:
+    build:
+      context: .
+      dockerfile: DockerfileLog
+    container_name: LogService1
+    environment:
+      - SERVER_PORT=8080
+    ports:
+      - "35001:8080"
+
+  logservice2:
+    build:
+      context: .
+      dockerfile: DockerfileLog
+    container_name: LogService2
+    environment:
+      - SERVER_PORT=8080
+    ports:
+      - "35002:8080"
+
+  logservice3:
+    build:
+      context: .
+      dockerfile: DockerfileLog
+    container_name: LogService3
+    environment:
+      - SERVER_PORT=8080
+    ports:
+      - "35003:8080"
+
+  mongodatabase:
+    image: mongo:5.0.25-focal
+    container_name: mongodatabase
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - "27017:27017"
+    command: mongod
+
+volumes:
+  mongodb:
+  mongodb_config:
