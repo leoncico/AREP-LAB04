@@ -58,5 +58,3 @@ Para probar la funcionalidad ingresa un mensaje y oprime el botón de enviar. De
 ![](/img/02.png)
 
 ## Evaluación
-
-Se prueban los métodos implementados
