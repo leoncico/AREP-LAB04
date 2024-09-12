@@ -30,7 +30,7 @@ Se debe esperar 1 o 2 minutos hasta que las máquinas inicie. Luego ya debe esta
 
 Para probar la funcionalidad ingresa un mensaje y oprime el botón de enviar. Debería mostrarse el mensaje que ingresaste en la tabla inferior
 
-![](/img/01.png)
+![](/img/01.PNG)
 
 Link del video del Proyecto desplegado en AWS EC2: https://youtu.be/FR_96BTxfcE
 
@@ -58,4 +58,4 @@ Link del video del Proyecto desplegado en AWS EC2: https://youtu.be/FR_96BTxfcE
     -   El Security Group de AWS actúa como un firewall virtual que controla el tráfico entrante y saliente hacia la instancia de EC2.
     -   Asegura que solo el tráfico permitido (como las peticiones web y las conexiones a MongoDB) pueda llegar a los servicios alojados en Docker.
 
-![](/img/02.png)
+![](/img/02.PNG)
