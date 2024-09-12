@@ -29,9 +29,10 @@ docker-compose up -d
 Se debe esperar 1 o 2 minutos hasta que las máquinas inicie. Luego ya debe estar en ejecución el servidor así que ingresa desde un Browser a la dirección [localhost:8080/logs.html]() para interactuar con la aplicación web.
 
 Para probar la funcionalidad ingresa un mensaje y oprime el botón de enviar. Debería mostrarse el mensaje que ingresaste en la tabla inferior
+
 ![](/img/01.png)
 
-Video del Proyecto desplegado en AWS EC2: [https://youtu.be/FR_96BTxfcE]()
+Link del video del Proyecto desplegado en AWS EC2: https://youtu.be/FR_96BTxfcE
 
 ## Arquitectura
 -   Web-Bootstrap (Cliente Web):
